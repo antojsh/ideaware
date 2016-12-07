@@ -1,0 +1,347 @@
+    /* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+    
+    // bower:scss
+    // endbower
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .container {
+        display: block;
+        width: 100%;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .column-2 {
+        width: 50%;
+    }
+    
+    .container-fluid {
+        padding: 0em 10em;
+    }
+    
+    .navbar {
+        height: 94px;
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+        .menu,
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            & > li {
+                margin-left: 25px;
+                color: #4a4a4a;
+            }
+        }
+    }
+    
+    .header {
+        height: auto;
+        position: relative;
+        width: 100%;
+        display: block;
+        width: 100%;
+        #contet-selects {
+            position: absolute;
+            z-index: 20;
+            right: 2em;
+            top: 50%;
+            transform: translateY(-50%);
+            .selector_item {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 2px solid rgba(255, 255, 255, .8);
+                margin: .8em;
+                cursor: pointer;
+            }
+            .selector_selected {
+                background: rgba(255, 255, 255, .8);
+            }
+        }
+        .item1,
+        .item2 {
+            padding-top: 4em;
+            background-position: center;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+        }
+        .item1 {
+            background: url(../assets/images/Background.png);
+        }
+        .item2 {
+            background-image: linear-gradient(rgba(245, 126, 34, .4), rgba(245, 126, 34, .7)), url(../assets/images/Background2.png);
+        }
+        .slider-inner {
+            display: table;
+            // width: 200%;
+            position: relative;
+            transition: all 1s linear;
+            left: 0;
+        }
+        .slider-item {
+            float: left;
+            height: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10em;
+            max-height: calc( 100vh - 98px);
+            left: 0;
+            h1,
+            h3 {
+                color: rgba(255, 255, 255, 1);
+                font-weight: 100;
+            }
+            h1 {
+                font-size: 3em;
+                span {
+                    font-weight: 100;
+                }
+            }
+            img {
+                max-width: 700px;
+                margin-top: 90px;
+            }
+        }
+    }
+    
+    .paragraph {
+        margin-top: 200px;
+        padding-bottom: 2em;
+        h1,
+        p {
+            color: #616161;
+        }
+        h1 {
+            margin-bottom: .8em;
+        }
+        p {
+            line-height: 2;
+        }
+    }
+    
+    .youtube-container {
+        margin-top: 4em;
+        .content-input {
+            border-radius: 25px;
+            border: 1px solid #d1d1d1;
+            margin-right: 6em;
+            padding: 0 0 0 35px;
+            position: relative;
+            overflow: hidden;
+            position: relative;
+            input {
+                outline: none;
+                border: none;
+                width: 100%;
+                height: 35px;
+                margin: 0;
+                font-style: italic;
+                color: darken( #d1d1d1, 40%);
+            }
+            .icon-search {
+                position: absolute;
+                left: 10px;
+                top: 25%;
+                font-size: 1.2rem;
+                color: #d1d1d1;
+            }
+        }
+        .filter {
+            p {
+                float: right;
+                color: darken( #d1d1d1, 40%);
+                cursor: pointer;
+            }
+            b {
+                color: iluminate(black, 80%);
+            }
+            span {
+                margin-left: 20px;
+            }
+        }
+    }
+    
+    .videos-container {
+        display: block;
+        margin-top: 2em;
+        width: 100%;
+    }
+    
+    .video-item {
+        display: inline-block;
+        width: calc((100% - 80px) / 3);
+        margin-top: 10px;
+        margin-left: 20px;
+        overflow-y: hidden;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .footer {
+        background: url(../assets/images/Background.png);
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        position: relative;
+        margin-top: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .contact {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            small {
+                color: rgba(white, .5);
+                font-size: 1.2em;
+            }
+            h1 {
+                color: white;
+            }
+            .social-icons {
+                margin-top: 2em;
+                display: flex;
+                justify-content: space-around;
+                width: 150px;
+                span {
+                    color: #4f7c90;
+                    background: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:1024px) {
+        .container-fluid,
+        .container {
+            width: 100%;
+            padding: 1em 4em;
+        }
+        .video-item {
+            width: 48% !important;
+            margin: 0;
+            padding: 0;
+            &:nth-child(2n) {
+                margin-left: 2%;
+            }
+        }
+    }
+    
+    @media screen and (max-width:720px) {
+        .container-fluid,
+        .container {
+            width: 100%;
+            padding: .7em 2em;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header {
+            height: calc(100vh - 98px);
+            .slider-inner {
+                height: 100%;
+            }
+            .slider-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-top: 0;
+            }
+            .slider-item img {
+                display: none;
+            }
+            #contet-selects {
+                left: 50%;
+                top: 0 !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                height: auto;
+                transform: none;
+                height: 50px;
+                transform: translateX(-50%);
+            }
+        }
+        .navbar {
+            .navbar-logo {
+                justify-content: center;
+            }
+            ul > li {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .video-item {
+            width: 100% !important;
+            margin: 0;
+            padding: 0;
+            &:nth-child(2n) {
+                margin-left: 0%;
+            }
+        }
+        .row {
+            flex-direction: column;
+        }
+        .column-2 {
+            width: 100%;
+        }
+        .paragraph {
+            margin-top: 2em;
+        }
+        .youtube-container {
+            .content-input {
+                margin: 0;
+            }
+            .filter {
+                p {
+                    float: left;
+                    margin-top: 1em;
+                    color: darken( #d1d1d1, 40%);
+                }
+            }
+        }
+    }
+    /* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+    
+    // injector
+    // endinjector

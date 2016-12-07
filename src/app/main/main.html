@@ -1,0 +1,66 @@
+<div class="container-fluid navbar row">
+    <div class="column-2 navbar-logo">
+        <img src="../../assets/images/Logo.png">
+    </div>
+    <div class="column-2 .menu">
+        <ul>
+            <li>Work</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</div>
+<div class="header" id='slider'>
+    <!-- <div class="prueba">Prueba</div> -->
+    <!--  <div class="slider-inner"> -->
+    <div class="slider-item item1">
+        <h1>Sed do eiusmod <span>tempor incididunt</span></h1>
+        <h3>Nisi ut aliquip ex commodo conseq </h3>
+        <img src="../../assets/images/Computer.png" />
+    </div>
+    <div class="slider-item item2">
+        <h1>Sed do eiusmod <span>tempor incididunt</span></h1>
+        <h3>Nisi ut aliquip ex commodo conseq </h3>
+        <img src="../../assets/images/Computer.png" />
+    </div>
+    
+    <!-- </div> -->
+</div>
+<div class="paragraph container-fluid ">
+    <h1>Lorem ipsum dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="youtube-container container-fluid">
+    <div class="row">
+        <div class="column-2">
+            <div class="content-input">
+                <form ng-submit='searchYoutube(search)'>
+                    <span class="icon-search"></span>
+                    <input type="text" placeholder="Search" ng-model='search' ng-init='search="angular"'>
+                </form>
+            </div>
+        </div>
+        <div class="column-2 filter">
+            <p>Filter by <b>Animation</b><span class="icon-triangle-down"></span></p>
+        </div>
+    </div>
+</div>
+<div class="youtube-videos container-fluid">
+    <div class="row videos-container">
+        <div class="video-item" ng-repeat='video in videos'>
+            <iframe ng-src="{{video.iframeSrc | trusted}}"></iframe>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="contact">
+        <small>Contact US</small>
+        <h1>contac@ideaware.co</h1>
+        <div class="social-icons">
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-youtube-play"></span>
+        </div>
+    </div>
+</footer>
+<script src='assets/js/slider.js'></script>
